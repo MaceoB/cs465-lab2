@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewort" content="width=device-width">
+        <title>CS 465 Lab 2 featuring Leaflet</title>
+        <!--stylesheet for buttons and widgets-->
+        <link rel="stylesheet" href="style.css"/>
+        <!--Leaflet API references-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+            crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+    </head>
+    <body>
+        <!--Overlay and Popup show up when a location is clicked, start as hidden-->
+        <div id = "overlay"></div>
+
+        <div id = "popup">
+            <h2>Place and name your destination</h2>
+            <div>
+                <textarea id="content" rows="3" cols="50"></textarea>
+            </div>
+
+            <button id= "submitButton">Place Marker</button>
+        </div>
+
+        <div id="root" style="height: 1800px;"></div>
+
+        <button id="resetButton">Reset</button>
+
+        
+        <!--Script for interactivity-->
+
+        <script src="app.jsx" type="module" defer></script>
+    </body>
+</html>
