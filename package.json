@@ -2,11 +2,12 @@
   "name": "cs465-lab2",
   "version": "1.0.0",
   "scripts": {
-    "dev": "npx vite",
-    "build": "chmod +x node_modules/.bin/vite && npx vite build",
-    "preview": "npx vite preview --port $PORT"
+    "dev": "vite",
+    "build": "vite build",
+    "start": "serve -s dist -l $PORT"
   },
   "devDependencies": {
+    "serve": "^14.2.5",
     "vite": "^7.1.10"
   },
   "dependencies": {
